@@ -1,0 +1,16 @@
+<script>
+var message = (function(){
+  var msg = 'Hiren Joshi(Vadodara) Say';
+  return {
+    getMsg: function(){
+      return msg;
+    },
+    setMsg: function(data){
+      msg = data;
+    }
+  };
+})();
+alert(message.getMsg());// Output: Default Message
+message.setMsg('Hello World!');
+alert(message.getMsg());// Output: Hello World!
+</script>
